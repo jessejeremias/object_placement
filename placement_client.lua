@@ -4,17 +4,17 @@ local fonts 	= exports.fonts
 local screenWidth, screenHeight = guiGetScreenSize()
 local testShader, tec 			= nil, nil
 local greenShader 				= nil
-local previewObj 				= nil
-local previewObjName			= ""
-local previewObjCost			= 999999999
-local defaultFont 				= nil
-local firstClickDisabled		= false
-local rotZ 						= 0
-local obstructed				= false
+local previewObj = nil
+local previewObjName = ""
+local previewObjCost = 999999999
+local defaultFont = nil
+local firstClickDisabled = false
+local rotZ = 0
+local obstructed = false
 
 function onClientResourceStart()
 	
-	defaultFont 	= fonts:getFont("circular", "medium")
+	defaultFont = fonts:getFont("circular", "medium")
 	testShader, tec = dxCreateShader( "fx/block_world.fx", 0, 0, false, "object" )
 
 	if not testShader then
