@@ -29,5 +29,5 @@ function onCreatePreviewCommand(commandName, objectId, objectName, objectCost)
   exports.object_placement:createPreview(objectId, objectName, objectCost)
 end
 
-addEventHnadler("onClientResourceStart", resourceRoot, onClientResourceStart)
+addEventHandler("onClientResourceStart", resourceRoot, onClientResourceStart)
 ```
