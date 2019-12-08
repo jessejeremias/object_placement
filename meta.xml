@@ -1,0 +1,13 @@
+<meta>
+	<info author="Goonz" description="Object placement system" type="script" version="1.0.0" />
+
+	<oop>true</oop>
+
+	<file src="fx/block_world.fx" type="client" />
+	<file src="fx/mta-helper.fx" type="client" />
+
+	<script src="placement_client.lua" type="client" protected="true" />
+	<script src="placement_server.lua" type="server" />
+
+	<export function="createPreview" type="client" http="false" />
+</meta>
